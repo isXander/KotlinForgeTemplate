@@ -45,7 +45,7 @@ buildConfig {
     buildConfigField 'Int', 'VERSION_MAJOR', mod_version_major
     buildConfigField 'Int', 'VERSION_MINOR', mod_version_minor
     buildConfigField 'Int', 'VERSION_PATCH', mod_version_patch
-    buildConfigField 'Int?', 'VERSION_PRERELEASE', (isPrerelease ? "\"$mod_version_prerelease\"" : 'null')
+    buildConfigField 'Int?', 'VERSION_PRERELEASE', (isPrerelease ? mod_version_prerelease : 'null')
 
     buildConfigField 'String', 'VERSION_FULL', "\"${project.version}\""
 }
