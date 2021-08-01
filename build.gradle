@@ -74,6 +74,7 @@ dependencies {
 
 jar {
     manifest.attributes (
+            'MixinConfigs': 'mixins.examplemod.json',
             'TweakClass': 'gg.essential.loader.stage0.EssentialSetupTweaker'
     )
 
